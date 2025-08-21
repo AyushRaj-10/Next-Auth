@@ -38,8 +38,6 @@ const AuthForm = () => {
         { headers: { "Content-Type": "application/json" } }
       )
 
-      console.log("API Response:", response.data) // 👈 Debugging
-
       const { token, user } = response.data
 
       if (token && user) {
